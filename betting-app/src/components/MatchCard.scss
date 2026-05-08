@@ -1,0 +1,44 @@
+.match-card {
+  background: #1e1e1e;
+  color: white;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid #333;
+
+  .match-info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    color: #00ff88; // Verde neón para el estado
+    margin-bottom: 10px;
+  }
+
+  .teams {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+    .odd-btn {
+      background: #333;
+      color: #00ff88;
+      border: 1px solid #444;
+      padding: 8px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background: #00ff88;
+        color: #000;
+        }
+      &.selected {
+            background: #00ff88 !important; // El verde neón que elegimos
+            color: #000 !important;
+            font-weight: bold;
+            box-shadow: 0 0 10px #00ff88;
+        }  
+    }
+  }
+}
